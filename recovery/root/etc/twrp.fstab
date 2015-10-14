@@ -6,7 +6,7 @@
 /logo            emmc    /dev/block/platform/msm_sdcc.1/by-name/LOGO           flags=backup=1;subpartitionof=/firmware
 /dbi             emmc    /dev/block/platform/msm_sdcc.1/by-name/dbi            flags=backup=1;subpartitionof=/firmware
 /tz              emmc    /dev/block/platform/msm_sdcc.1/by-name/tz             flags=backup=1;subpartitionof=/firmware
-/firmware        vfat    /dev/block/platform/msm_sdcc.1/by-name/modem          flags=mounttodecrypt;backup=1;display=Firmware;fsflags="ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0"
+/firmware        vfat    /dev/block/platform/msm_sdcc.1/by-name/modem          flags=mounttodecrypt;backup=1;display=Firmware
 /static_nv_bk    emmc    /dev/block/platform/msm_sdcc.1/by-name/oppostanvbk    flags=backup=1;subpartitionof=/firmware
 /sbl1            emmc    /dev/block/platform/msm_sdcc.1/by-name/sbl1           flags=backup=1;subpartitionof=/firmware
 
