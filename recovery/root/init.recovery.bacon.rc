@@ -1,14 +1,7 @@
 on firmware_mounts_complete
-    rm /dev/.booting
-
-on fs
-    mkdir /firmware 0771 system system
-    wait /dev/block/platform/msm_sdcc.1/by-name/modem
-    mount vfat /dev/block/platform/msm_sdcc.1/by-name/modem /firmware ro shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0
+   rm /dev/.booting
 
 on late-init
-    trigger fs
-
     # Remove a file to wake up anything waiting for firmware.
     trigger firmware_mounts_complete
 
